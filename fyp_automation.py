@@ -9,13 +9,13 @@ def click_vscode():
     vscode_icon = None
     # i = 0
     while vscode_icon is None:
-        vscode_icon = pg.locateOnScreen('vscode_icon_dark.png')
+        vscode_icon = pg.locateOnScreen('/images/vscode_icon_dark.png')
         if vscode_icon is None:
-            vscode_icon = pg.locateOnScreen('vscode_icon_light.png')
+            vscode_icon = pg.locateOnScreen('/images/vscode_icon_light.png')
         if vscode_icon is None:
-            vscode_icon = pg.locateOnScreen('vscode_icon_tiled.png')
+            vscode_icon = pg.locateOnScreen('/images/vscode_icon_tiled.png')
         if vscode_icon is None:
-            vscode_icon = pg.locateOnScreen('vscode_icon_multiple.png')
+            vscode_icon = pg.locateOnScreen('/images/vscode_icon_multiple.png')
         # i += 1
         # print(i)
 
@@ -29,10 +29,11 @@ vscode_angular_tile = None
 # # i = 0
 
 while vscode_angular_tile is None:
-    vscode_angular_tile = pg.locateOnScreen('vscode_angular-updated_tile.png')
+    vscode_angular_tile = pg.locateOnScreen(
+        '/images/vscode_angular-updated_tile.png')
     if vscode_angular_tile is None:
         vscode_angular_tile = pg.locateOnScreen(
-            'vscode_angular-updated_tile_light.png')
+            '/images/vscode_angular-updated_tile_light.png')
 #     # i += 1
 #     # print(i)
 
@@ -44,10 +45,11 @@ click_vscode()
 vscode_connectico_tile = None
 # i = 0
 while vscode_connectico_tile is None:
-    vscode_connectico_tile = pg.locateOnScreen('vscode_connectico_tile.png')
+    vscode_connectico_tile = pg.locateOnScreen(
+        '/images/vscode_connectico_tile.png')
     if vscode_connectico_tile is None:
         vscode_connectico_tile = pg.locateOnScreen(
-            'vscode_connectico_tile_light.png')
+            '/images/vscode_connectico_tile_light.png')
 # i += 1
 # print(i)
 
